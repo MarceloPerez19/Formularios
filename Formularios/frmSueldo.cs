@@ -29,6 +29,20 @@ namespace Formularios
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            //validaciones
+            if(this.txtNombre.Text.Length==0)
+            {
+                MessageBox.Show("Por favor debes ingresar el nombre");
+                this.txtNombre.Focus(); //ubica el curso en un control
+                return; //abandonar
+            }
+
+            //tarea
+            //1. validar el ingreso de todos los cuadros de textos
+            //2. validar que el dato ingresado sea numerico 
+            //no usar tray..catch
+
+
             //sumar los ingresos
             double horasTrabajadas = double.Parse( this.txtHorasTrab.Text);
             double valorHora = double.Parse(this.txtValorHora.Text);
@@ -46,6 +60,8 @@ namespace Formularios
 
             //mostrar el total de egresos en el cuadro de texto 
             this.txtTotalEgresos.Text = totEgre.ToString();
+
+            //liquido
             double liquidoRecibir = totIng - totEgre;
             lblResultado.Text = "Estimado " + this.txtNombre.Text + " tu sueldo es : " + liquidoRecibir.ToString();
         }
@@ -53,6 +69,11 @@ namespace Formularios
         private void txtHorasTrab_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close(); //cerrar el formulario 
         }
     }
 }

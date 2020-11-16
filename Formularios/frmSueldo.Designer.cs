@@ -30,26 +30,26 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.Ingresos = new System.Windows.Forms.GroupBox();
+            this.txtTotalIng = new System.Windows.Forms.TextBox();
+            this.txtBono = new System.Windows.Forms.TextBox();
+            this.txtValorHora = new System.Windows.Forms.TextBox();
+            this.txtHorasTrab = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtTotalEgresos = new System.Windows.Forms.TextBox();
+            this.txtCuentaPagar = new System.Windows.Forms.TextBox();
+            this.txtBar = new System.Windows.Forms.TextBox();
+            this.txtAsoTrabajadores = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtHorasTrab = new System.Windows.Forms.TextBox();
-            this.txtValorHora = new System.Windows.Forms.TextBox();
-            this.txtBono = new System.Windows.Forms.TextBox();
-            this.txtTotalIng = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtAsoTrabajadores = new System.Windows.Forms.TextBox();
-            this.txtBar = new System.Windows.Forms.TextBox();
-            this.txtCuentaPagar = new System.Windows.Forms.TextBox();
-            this.txtTotalEgresos = new System.Windows.Forms.TextBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -87,6 +87,86 @@
             this.Ingresos.TabStop = false;
             this.Ingresos.Text = "Ingresos";
             // 
+            // txtTotalIng
+            // 
+            this.txtTotalIng.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.txtTotalIng.Location = new System.Drawing.Point(139, 129);
+            this.txtTotalIng.Name = "txtTotalIng";
+            this.txtTotalIng.ReadOnly = true;
+            this.txtTotalIng.Size = new System.Drawing.Size(100, 20);
+            this.txtTotalIng.TabIndex = 8;
+            // 
+            // txtBono
+            // 
+            this.txtBono.ForeColor = System.Drawing.Color.Olive;
+            this.txtBono.Location = new System.Drawing.Point(139, 92);
+            this.txtBono.Name = "txtBono";
+            this.txtBono.Size = new System.Drawing.Size(100, 20);
+            this.txtBono.TabIndex = 7;
+            // 
+            // txtValorHora
+            // 
+            this.txtValorHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtValorHora.Location = new System.Drawing.Point(139, 55);
+            this.txtValorHora.Name = "txtValorHora";
+            this.txtValorHora.Size = new System.Drawing.Size(100, 20);
+            this.txtValorHora.TabIndex = 6;
+            // 
+            // txtHorasTrab
+            // 
+            this.txtHorasTrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHorasTrab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtHorasTrab.Location = new System.Drawing.Point(139, 25);
+            this.txtHorasTrab.Name = "txtHorasTrab";
+            this.txtHorasTrab.Size = new System.Drawing.Size(100, 20);
+            this.txtHorasTrab.TabIndex = 5;
+            this.txtHorasTrab.TextChanged += new System.EventHandler(this.txtHorasTrab_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 136);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(119, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "TOTAL DE INGRESOS";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(10, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Bono de responsabilidad";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 77);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 13);
+            this.label5.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 58);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Valor por hora";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Horas trabajadas";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtTotalEgresos);
@@ -104,6 +184,72 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Egresos";
+            // 
+            // txtTotalEgresos
+            // 
+            this.txtTotalEgresos.Location = new System.Drawing.Point(166, 129);
+            this.txtTotalEgresos.Name = "txtTotalEgresos";
+            this.txtTotalEgresos.ReadOnly = true;
+            this.txtTotalEgresos.Size = new System.Drawing.Size(100, 20);
+            this.txtTotalEgresos.TabIndex = 7;
+            // 
+            // txtCuentaPagar
+            // 
+            this.txtCuentaPagar.Location = new System.Drawing.Point(166, 95);
+            this.txtCuentaPagar.Name = "txtCuentaPagar";
+            this.txtCuentaPagar.Size = new System.Drawing.Size(100, 20);
+            this.txtCuentaPagar.TabIndex = 6;
+            // 
+            // txtBar
+            // 
+            this.txtBar.Location = new System.Drawing.Point(166, 58);
+            this.txtBar.Name = "txtBar";
+            this.txtBar.Size = new System.Drawing.Size(100, 20);
+            this.txtBar.TabIndex = 5;
+            // 
+            // txtAsoTrabajadores
+            // 
+            this.txtAsoTrabajadores.Location = new System.Drawing.Point(166, 31);
+            this.txtAsoTrabajadores.Name = "txtAsoTrabajadores";
+            this.txtAsoTrabajadores.Size = new System.Drawing.Size(100, 20);
+            this.txtAsoTrabajadores.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 132);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(115, 13);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "TOTAL DE EGRESOS";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 95);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 13);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Cuenta por pagar";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 62);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 13);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Bar";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 31);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(108, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Aso. de Trabajadores";
             // 
             // label2
             // 
@@ -126,152 +272,6 @@
             this.txtNombre.Size = new System.Drawing.Size(474, 20);
             this.txtNombre.TabIndex = 4;
             this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Horas trabajadas";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 58);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Valor por hora";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 77);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 13);
-            this.label5.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 95);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Bono de responsabilidad";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 136);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "TOTAL DE INGRESOS";
-            // 
-            // txtHorasTrab
-            // 
-            this.txtHorasTrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHorasTrab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtHorasTrab.Location = new System.Drawing.Point(139, 25);
-            this.txtHorasTrab.Name = "txtHorasTrab";
-            this.txtHorasTrab.Size = new System.Drawing.Size(100, 20);
-            this.txtHorasTrab.TabIndex = 5;
-            this.txtHorasTrab.TextChanged += new System.EventHandler(this.txtHorasTrab_TextChanged);
-            // 
-            // txtValorHora
-            // 
-            this.txtValorHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtValorHora.Location = new System.Drawing.Point(139, 55);
-            this.txtValorHora.Name = "txtValorHora";
-            this.txtValorHora.Size = new System.Drawing.Size(100, 20);
-            this.txtValorHora.TabIndex = 6;
-            // 
-            // txtBono
-            // 
-            this.txtBono.ForeColor = System.Drawing.Color.Olive;
-            this.txtBono.Location = new System.Drawing.Point(139, 92);
-            this.txtBono.Name = "txtBono";
-            this.txtBono.Size = new System.Drawing.Size(100, 20);
-            this.txtBono.TabIndex = 7;
-            // 
-            // txtTotalIng
-            // 
-            this.txtTotalIng.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.txtTotalIng.Location = new System.Drawing.Point(139, 129);
-            this.txtTotalIng.Name = "txtTotalIng";
-            this.txtTotalIng.ReadOnly = true;
-            this.txtTotalIng.Size = new System.Drawing.Size(100, 20);
-            this.txtTotalIng.TabIndex = 8;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 31);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Aso. de Trabajadores";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 62);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(23, 13);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Bar";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 95);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Cuenta por pagar";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 132);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(115, 13);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "TOTAL DE EGRESOS";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // txtAsoTrabajadores
-            // 
-            this.txtAsoTrabajadores.Location = new System.Drawing.Point(166, 31);
-            this.txtAsoTrabajadores.Name = "txtAsoTrabajadores";
-            this.txtAsoTrabajadores.Size = new System.Drawing.Size(100, 20);
-            this.txtAsoTrabajadores.TabIndex = 4;
-            // 
-            // txtBar
-            // 
-            this.txtBar.Location = new System.Drawing.Point(166, 58);
-            this.txtBar.Name = "txtBar";
-            this.txtBar.Size = new System.Drawing.Size(100, 20);
-            this.txtBar.TabIndex = 5;
-            // 
-            // txtCuentaPagar
-            // 
-            this.txtCuentaPagar.Location = new System.Drawing.Point(166, 95);
-            this.txtCuentaPagar.Name = "txtCuentaPagar";
-            this.txtCuentaPagar.Size = new System.Drawing.Size(100, 20);
-            this.txtCuentaPagar.TabIndex = 6;
-            // 
-            // txtTotalEgresos
-            // 
-            this.txtTotalEgresos.Location = new System.Drawing.Point(166, 129);
-            this.txtTotalEgresos.Name = "txtTotalEgresos";
-            this.txtTotalEgresos.ReadOnly = true;
-            this.txtTotalEgresos.Size = new System.Drawing.Size(100, 20);
-            this.txtTotalEgresos.TabIndex = 7;
             // 
             // lblResultado
             // 
@@ -300,6 +300,7 @@
             this.btnSalir.TabIndex = 7;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmSueldo
             // 
