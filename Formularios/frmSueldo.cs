@@ -37,6 +37,50 @@ namespace Formularios
                 return; //abandonar
             }
 
+            if (this.txtAsoTrabajadores.Text.Length == 0)
+            {
+                MessageBox.Show("Por favor debes ingresar la Aso. de trabajadores");
+                this.txtAsoTrabajadores.Focus(); 
+                return; 
+            }
+
+            if (this.txtBar.Text.Length == 0)
+            {
+                MessageBox.Show("Por favor debes ingresar el Bar");
+                this.txtBar.Focus(); 
+                return; 
+            }
+
+            if (this.txtBono.Text.Length == 0)
+            {
+                MessageBox.Show("Por favor debes ingresar el bono");
+                this.txtBono.Focus(); 
+                return; 
+            }
+
+            if (this.txtCuentaPagar.Text.Length == 0)
+            {
+                MessageBox.Show("Por favor debes ingresar las cuentas por pagar");
+                this.txtCuentaPagar.Focus(); 
+                return; 
+            }
+
+            if (this.txtHorasTrab.Text.Length == 0)
+            {
+                MessageBox.Show("Por favor debes ingresar las horas trabajadas");
+                this.txtHorasTrab.Focus(); 
+                return; 
+            }
+
+            if (this.txtValorHora.Text.Length == 0)
+            {
+                MessageBox.Show("Por favor debes ingresar el valor por hora");
+                this.txtValorHora.Focus(); 
+                return; 
+            }
+
+           
+
             //tarea
             //1. validar el ingreso de todos los cuadros de textos
             //2. validar que el dato ingresado sea numerico 
@@ -74,6 +118,46 @@ namespace Formularios
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close(); //cerrar el formulario 
+        }
+
+        private void txtHorasTrab_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            vali.Numeros(e);
+        }
+
+        private void txtValorHora_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtValorHora_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            vali.Numeros(e);
+        }
+
+        private void txtBono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            vali.Numeros(e);
+        }
+
+        private void txtAsoTrabajadores_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            vali.Numeros(e);
+        }
+
+        private void txtBar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            vali.Numeros(e);
+        }
+
+        private void txtCuentaPagar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            vali.Numeros(e);
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            vali.Letras(e);
         }
     }
 }
