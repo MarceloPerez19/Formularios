@@ -84,8 +84,15 @@ namespace Formularios
             //tarea
             //1. validar el ingreso de todos los cuadros de textos
             //2. validar que el dato ingresado sea numerico 
-            //no usar tray..catch
+            //no usar tray..catc
+            //traycatch modelo hacerlo para validar cuadros de texto
 
+            /*if(Double.TryParse(txtHorasTrab.Text, out double HorasTrab)==false)
+            {
+                MessageBox.Show("Por favor solo ingresa valores numericos...");
+                this.txtHorasTrab.Focus();
+                return;
+            }*/
 
             //sumar los ingresos
             double horasTrabajadas = double.Parse( this.txtHorasTrab.Text);
