@@ -35,11 +35,24 @@ namespace Formularios
                 return;
             }
 
+            encerar();
             numeroaBinario(num);
             
         }//fin boton calcular
 
-        
+        void encerar()
+        {
+            //establece todos los chchbox en falso
+            this.chk1.Checked = false;
+            this.chk2.Checked = false;
+            this.chk3.Checked = false;
+            this.chk4.Checked = false;
+            this.chk5.Checked = false;
+            this.chk6.Checked = false;
+            this.chk7.Checked = false;
+            this.chk8.Checked = false;
+
+        }
 
         void numeroaBinario(int num)
         {
@@ -61,7 +74,7 @@ namespace Formularios
                     this.chk4.Checked = residuo == 0 ? false : true;
                 else if (cont == 3)
                     this.chk3.Checked = residuo == 0 ? false : true;
-                else if (cont == 27)
+                else if (cont == 2)
                     this.chk2.Checked = residuo == 0 ? false : true;
                 else if (cont == 1)
                     this.chk1.Checked = residuo == 0 ? false : true;
