@@ -27,7 +27,7 @@ namespace Formularios
             //todo: validar que sea valores numericos 
 
             //validar que este en el rango de 0 a 255
-            int num = Int32.Parse(this.txtNumero.Text);
+            int num = Int32.Parse(this.txtNumero.Text); 
             if(!(num>=0 && num<=255))
             {
                 MessageBox.Show("Tu numero debe estar en el rango 0..255");
