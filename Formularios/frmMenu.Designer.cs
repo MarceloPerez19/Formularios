@@ -67,6 +67,7 @@
             this.indicePromedialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calendarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.binarioADecimalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -96,6 +97,7 @@
             this.saveToolStripMenuItem,
             this.calendarioToolStripMenuItem,
             this.saveAsToolStripMenuItem,
+            this.binarioADecimalToolStripMenuItem,
             this.otroMenuToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
@@ -387,6 +389,13 @@
             this.toolStripButton1.Text = "Primo";
             this.toolStripButton1.Click += new System.EventHandler(this.SaveAsToolStripMenuItem_Click);
             // 
+            // binarioADecimalToolStripMenuItem
+            // 
+            this.binarioADecimalToolStripMenuItem.Name = "binarioADecimalToolStripMenuItem";
+            this.binarioADecimalToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.binarioADecimalToolStripMenuItem.Text = "Binario a Decimal";
+            this.binarioADecimalToolStripMenuItem.Click += new System.EventHandler(this.binarioADecimalToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,6 +458,7 @@
         private System.Windows.Forms.ToolStripMenuItem indicePromedialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calendarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripMenuItem binarioADecimalToolStripMenuItem;
     }
 }
 

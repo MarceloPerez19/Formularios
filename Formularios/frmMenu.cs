@@ -119,5 +119,12 @@ namespace Formularios
             frm1.MdiParent=this;
             frm1.Show();
         }
+
+        private void binarioADecimalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBinarioaDcecimal frm1 = new frmBinarioaDcecimal();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
     }
 }
