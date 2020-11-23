@@ -35,8 +35,8 @@ namespace Formularios
             DateTime Actual = DateTime.Today;
             int Allos = Actual.Year - dateTimePicker1.Value.Year;
             int Dias = ((Actual.Year - dateTimePicker1.Value.Year) * 365) + ((Actual.Month - dateTimePicker1.Value.Month) * 31)+ Actual.Day - dateTimePicker1.Value.Day;
-            txtAllos.Text = Allos.ToString() + " Tiempo en años";
-            txtDias.Text = Dias.ToString() + " Tiempo en Días";
+            txtAllos.Text = Allos.ToString();
+            txtDias.Text = Dias.ToString();
         }
     }
 }
