@@ -126,5 +126,19 @@ namespace Formularios
             frm1.MdiParent = this;
             frm1.Show();
         }
+
+        private void factorialDeUnNumeroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFactorial frm1 = new frmFactorial();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
+
+        private void miltiplicarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMultiplicar frm1 = new frmMultiplicar();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
     }
 }
