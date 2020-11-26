@@ -51,5 +51,25 @@ namespace TIC
             return fac;
         }
 
+        
+        public static long Serie(int num)
+        {
+            long aux;
+            int limite = 100;
+            long fac = 1;
+            
+            for (int i = 1; i <= limite; i++)
+            {
+                if (num == 0)
+                    return 1;  //retorna y abandona la funcion
+
+                for (int a = 1; a <= num; a++)
+                    fac *= a;
+
+                return fac;
+            }
+            return aux;
+        }
+
     }
 }

@@ -16,7 +16,7 @@ namespace Formularios
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmOtroTablaMultiplicarYFactorial());
+            Application.Run(new frmserie());
         }
     }
 }
