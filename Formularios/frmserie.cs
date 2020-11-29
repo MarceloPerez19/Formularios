@@ -19,8 +19,8 @@ namespace Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num = int.Parse(this.txtLimite.Text);
-            long cad = TIC.utilidades.Serie(num);
+            int limite = int.Parse(this.txtLimite.Text);
+            long cad = TIC.utilidades.Serie(limite);
             this.txtResultado.Text = cad.ToString();
         }
     }

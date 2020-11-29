@@ -51,17 +51,14 @@ namespace TIC
             return fac;
         }
 
-        
-        public static long Serie(int Limite)
+
+        public static long Serie( int limite)
         {
-            long a = 0;
-            long suma = 0;
-            for(int i=1; i<=Limite;i++)
-            {
-                a = factorial(i);
-                suma += a;
-            }
-            return suma;
+            long au = 0;
+            for (int i = 1; i <= limite; i++)
+                {
+                au = factorial(i);
+                } return au;
         }
 
     }

@@ -37,7 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 35);
+            this.label1.Location = new System.Drawing.Point(53, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             // btnSerie
             // 
-            this.btnSerie.Location = new System.Drawing.Point(341, 34);
+            this.btnSerie.Location = new System.Drawing.Point(343, 44);
             this.btnSerie.Name = "btnSerie";
             this.btnSerie.Size = new System.Drawing.Size(75, 23);
             this.btnSerie.TabIndex = 2;
@@ -64,7 +64,7 @@
             // 
             // txtLimite
             // 
-            this.txtLimite.Location = new System.Drawing.Point(165, 37);
+            this.txtLimite.Location = new System.Drawing.Point(165, 47);
             this.txtLimite.Name = "txtLimite";
             this.txtLimite.Size = new System.Drawing.Size(100, 20);
             this.txtLimite.TabIndex = 3;
