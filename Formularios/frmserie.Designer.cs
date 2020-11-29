@@ -54,11 +54,11 @@
             // 
             // btnSerie
             // 
-            this.btnSerie.Location = new System.Drawing.Point(337, 35);
+            this.btnSerie.Location = new System.Drawing.Point(341, 34);
             this.btnSerie.Name = "btnSerie";
             this.btnSerie.Size = new System.Drawing.Size(75, 23);
             this.btnSerie.TabIndex = 2;
-            this.btnSerie.Text = "button1";
+            this.btnSerie.Text = "Calcular";
             this.btnSerie.UseVisualStyleBackColor = true;
             this.btnSerie.Click += new System.EventHandler(this.button1_Click);
             // 

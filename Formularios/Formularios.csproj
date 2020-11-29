@@ -46,12 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLASES\FormulaMatematica.cs" />
     <Compile Include="CLASES\utilidades.cs" />
     <Compile Include="fmrCalendario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fmrCalendario.Designer.cs">
       <DependentUpon>fmrCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaMatematica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaMatematica.Designer.cs">
+      <DependentUpon>FormulaMatematica.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBinarioaDcecimal.cs">
       <SubType>Form</SubType>
@@ -124,6 +131,9 @@
     <Compile Include="vali.cs" />
     <EmbeddedResource Include="fmrCalendario.resx">
       <DependentUpon>fmrCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaMatematica.resx">
+      <DependentUpon>FormulaMatematica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBinarioaDcecimal.resx">
       <DependentUpon>frmBinarioaDcecimal.cs</DependentUpon>

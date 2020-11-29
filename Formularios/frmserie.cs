@@ -20,7 +20,7 @@ namespace Formularios
         private void button1_Click(object sender, EventArgs e)
         {
             int num = int.Parse(this.txtLimite.Text);
-            String cad = TIC.utilidades.Serie(num);
+            long cad = TIC.utilidades.Serie(num);
             this.txtResultado.Text = cad.ToString();
         }
     }
