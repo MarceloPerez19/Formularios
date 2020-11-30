@@ -72,6 +72,12 @@
     <Compile Include="frmFactorial.Designer.cs">
       <DependentUpon>frmFactorial.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInvertido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvertido.Designer.cs">
+      <DependentUpon>frmInvertido.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,12 @@
     </Compile>
     <Compile Include="frmNumeroEnBinario.Designer.cs">
       <DependentUpon>frmNumeroEnBinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartesComputador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPartesComputador.Designer.cs">
+      <DependentUpon>frmPartesComputador.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -141,6 +153,9 @@
     <EmbeddedResource Include="frmFactorial.resx">
       <DependentUpon>frmFactorial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInvertido.resx">
+      <DependentUpon>frmInvertido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOtroTablaMultiplicarYFactorial.resx">
       <DependentUpon>frmOtroTablaMultiplicarYFactorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPartesComputador.resx">
+      <DependentUpon>frmPartesComputador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
