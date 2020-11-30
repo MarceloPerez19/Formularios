@@ -140,5 +140,27 @@ namespace Formularios
             frm1.MdiParent = this;
             frm1.Show();
         }
+
+        private void formulaMatematicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFormulaMatematicas frm1 = new frmFormulaMatematicas();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
+
+        private void serieDeFactorialesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmserie frm1 = new frmserie();
+            frm1.MdiParent = this;
+            frm1.Show();
+
+        }
+
+        private void otraTablaDeMultiplicarYFactorialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOtroTablaMultiplicarYFactorial frm1 = new frmOtroTablaMultiplicarYFactorial();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
     }
 }

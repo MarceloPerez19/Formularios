@@ -38,6 +38,8 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calendarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.factorialDeUnNumeroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miltiplicarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.binarioADecimalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,8 +69,9 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.factorialDeUnNumeroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.miltiplicarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formulaMatematicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serieDeFactorialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.otraTablaDeMultiplicarYFactorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -101,6 +104,9 @@
             this.factorialDeUnNumeroToolStripMenuItem,
             this.miltiplicarToolStripMenuItem,
             this.binarioADecimalToolStripMenuItem,
+            this.serieDeFactorialesToolStripMenuItem,
+            this.otraTablaDeMultiplicarYFactorialToolStripMenuItem,
+            this.formulaMatematicaToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
             this.fileMenu.Name = "fileMenu";
@@ -114,7 +120,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.newToolStripMenuItem.Text = "&Numero entero binario";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.ShowNewForm);
             // 
@@ -156,6 +162,20 @@
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.saveAsToolStripMenuItem.Text = "&Formulario Primo";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.SaveAsToolStripMenuItem_Click);
+            // 
+            // factorialDeUnNumeroToolStripMenuItem
+            // 
+            this.factorialDeUnNumeroToolStripMenuItem.Name = "factorialDeUnNumeroToolStripMenuItem";
+            this.factorialDeUnNumeroToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.factorialDeUnNumeroToolStripMenuItem.Text = "Factorial de un numero ";
+            this.factorialDeUnNumeroToolStripMenuItem.Click += new System.EventHandler(this.factorialDeUnNumeroToolStripMenuItem_Click);
+            // 
+            // miltiplicarToolStripMenuItem
+            // 
+            this.miltiplicarToolStripMenuItem.Name = "miltiplicarToolStripMenuItem";
+            this.miltiplicarToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.miltiplicarToolStripMenuItem.Text = "Miltiplicar";
+            this.miltiplicarToolStripMenuItem.Click += new System.EventHandler(this.miltiplicarToolStripMenuItem_Click);
             // 
             // binarioADecimalToolStripMenuItem
             // 
@@ -392,19 +412,26 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // factorialDeUnNumeroToolStripMenuItem
+            // formulaMatematicaToolStripMenuItem
             // 
-            this.factorialDeUnNumeroToolStripMenuItem.Name = "factorialDeUnNumeroToolStripMenuItem";
-            this.factorialDeUnNumeroToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.factorialDeUnNumeroToolStripMenuItem.Text = "Factorial de un numero ";
-            this.factorialDeUnNumeroToolStripMenuItem.Click += new System.EventHandler(this.factorialDeUnNumeroToolStripMenuItem_Click);
+            this.formulaMatematicaToolStripMenuItem.Name = "formulaMatematicaToolStripMenuItem";
+            this.formulaMatematicaToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.formulaMatematicaToolStripMenuItem.Text = "Formula Matematica";
+            this.formulaMatematicaToolStripMenuItem.Click += new System.EventHandler(this.formulaMatematicaToolStripMenuItem_Click);
             // 
-            // miltiplicarToolStripMenuItem
+            // serieDeFactorialesToolStripMenuItem
             // 
-            this.miltiplicarToolStripMenuItem.Name = "miltiplicarToolStripMenuItem";
-            this.miltiplicarToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.miltiplicarToolStripMenuItem.Text = "Miltiplicar";
-            this.miltiplicarToolStripMenuItem.Click += new System.EventHandler(this.miltiplicarToolStripMenuItem_Click);
+            this.serieDeFactorialesToolStripMenuItem.Name = "serieDeFactorialesToolStripMenuItem";
+            this.serieDeFactorialesToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.serieDeFactorialesToolStripMenuItem.Text = "Serie de Factoriales";
+            this.serieDeFactorialesToolStripMenuItem.Click += new System.EventHandler(this.serieDeFactorialesToolStripMenuItem_Click);
+            // 
+            // otraTablaDeMultiplicarYFactorialToolStripMenuItem
+            // 
+            this.otraTablaDeMultiplicarYFactorialToolStripMenuItem.Name = "otraTablaDeMultiplicarYFactorialToolStripMenuItem";
+            this.otraTablaDeMultiplicarYFactorialToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.otraTablaDeMultiplicarYFactorialToolStripMenuItem.Text = "Otra tabla de Multiplicar y Factorial";
+            this.otraTablaDeMultiplicarYFactorialToolStripMenuItem.Click += new System.EventHandler(this.otraTablaDeMultiplicarYFactorialToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -470,6 +497,9 @@
         private System.Windows.Forms.ToolStripMenuItem binarioADecimalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem factorialDeUnNumeroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miltiplicarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem serieDeFactorialesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formulaMatematicaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem otraTablaDeMultiplicarYFactorialToolStripMenuItem;
     }
 }
 

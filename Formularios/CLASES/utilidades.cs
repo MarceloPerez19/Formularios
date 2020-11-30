@@ -56,8 +56,9 @@ namespace TIC
         {
             long au = 0;
             for (int i = 1; i <= limite; i++)
-                {
+                { 
                 au = factorial(i);
+                string cam = au.ToString();
                 } return au;
         }
 
